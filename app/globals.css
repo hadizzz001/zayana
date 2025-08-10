@@ -9,12 +9,12 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Special Elite", system-ui;
+   font-family: "BDO Grotesk", sans-serif;
    border-color: transparent !important;
  }
 
  body {
-   background-color: #ebe5d7 !important;
+   background-color: #f8f7f3 !important;
  }
 
  /* START: General styles */
@@ -71,7 +71,7 @@
    -webkit-border-radius: 12px;
    -moz-border-radius: 12px;
    border-radius: 12px;
-   font-family: "Special Elite", system-ui;
+   font-family: "BDO Grotesk", sans-serif;
  }
 
 
@@ -140,7 +140,7 @@
 
 
  .klaviyo_submit_button {
-   font-family: "Special Elite", system-ui;
+   font-family: "BDO Grotesk", sans-serif;
    font-size: 12px;
    font-weight: 700;
    background: #3d3d3a;
@@ -439,7 +439,7 @@
  .h4,
  .h5,
  .h6 {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: 700 !important;
    font-style: normal !important;
    text-transform: uppercase !important;
@@ -884,7 +884,7 @@
 
 
  body {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
  }
 
 
@@ -1067,7 +1067,7 @@
 
 
  header {
-   background-color: #ebe5d7 !important;
+   background-color: #f8f7f3 !important;
    z-index: 99 !important;
  }
 
@@ -1109,7 +1109,7 @@
  }
 
  .gothic {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: 400 !important;
    font-style: normal !important;
    text-transform: uppercase !important;
@@ -1119,7 +1119,7 @@
  }
 
  .myButton {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    background-color: #3d3d3d !important;
    padding: 18px 28px !important;
    color: white !important;
@@ -1154,20 +1154,20 @@
  .secP {
    color: #666666;
    font-size: 14px;
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
  }
 
 
  .secP2 {
    color: #fff;
    font-size: 14px;
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
  }
 
  .secP3 {
    color: #fff;
    font-size: 16px;
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    text-transform: uppercase !important;
  }
 
@@ -1191,7 +1191,7 @@
 
 
  .myButton1 {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    background-color: transparent !important;
    padding: 18px 28px !important;
    color: white !important;
@@ -1213,7 +1213,7 @@
 
 
  .myButton2 {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    background-color: transparent !important;
    color: white !important;
    font-size: 14px !important;
@@ -1254,7 +1254,7 @@
 
 
  .myntit {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: bolder !important;
    font-style: normal !important;
    text-transform: uppercase !important;
@@ -1286,7 +1286,7 @@
 
 
  .myPrice {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: 400 !important;
    font-style: normal !important;
    color: #000 !important;
@@ -1294,7 +1294,7 @@
  }
 
  .myPrice1 {
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: bolder !important;
    font-style: normal !important;
    color: #000 !important;
@@ -1338,7 +1338,7 @@
  #footId1>ul>li>a,
  #footId2>ul>li>a {
    font-size: 14.5px !important;
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
    font-weight: 400 !important;
  }
 
@@ -1353,13 +1353,17 @@
    font-size: 11px !important;
    font-weight: 400 !important;
    color: #9b9798 !important;
-   font-family: 'Special Elite', system-ui !important;
+   font-family: 'BDO Grotesk', sans-serif !important;
  }
 
 
-  .mynavidhere{
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
+ .mynavidhere {
+   padding-top: 0.5em !important;
+   padding-bottom: 0.5em !important;
+ }
+
+ #mymobfoot {
+   display: none !important;
  }
 
  @media (max-width: 768px) {
@@ -1367,10 +1371,12 @@
      background: transparent !important;
 
    }
-    .mynavidhere{
-  padding-top: 2em !important;
-  padding-bottom: 2em !important;
- }
+
+
+
+   #mymobfoot {
+     display: block !important;
+   }
  }
 
 
@@ -1456,7 +1462,7 @@
    #mobile-menu-btn {
      display: none;
    }
- 
+
  }
 
 
@@ -1489,6 +1495,7 @@
    text-transform: uppercase !important;
    color: white !important;
  }
+
  .mytitle2 {
    font-size: 25px !important;
    font-weight: bolder !important;
@@ -1506,102 +1513,295 @@
 
 
 
- .myP{
+ .myP {
    font-size: 12px !important;
    font-weight: bolder !important;
-   font-style: normal !important; 
+   font-style: normal !important;
    text-transform: uppercase !important;
    text-align: left !important;
-    color: #1f1a17 !important;
+   color: #1f1a17 !important;
  }
 
 
 
-  .myProduct1 {
-    color: #1f1a17 !important;
-    font-weight: bolder !important;
-    font-style: normal !important;
-    text-transform: uppercase !important;
+ .myProduct1 {
+   color: #1f1a17 !important;
+   font-weight: bolder !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
    font-size: 18px !important;
    text-align: left !important;
  }
 
 
- .myP1{
+ .myP1 {
    font-size: 13px !important;
-   font-weight: 100 !important;  
+   font-weight: 100 !important;
    text-align: left !important;
-    color: #1f1a17 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.3 !important;
-     letter-spacing: 2px !important;
+   color: #1f1a17 !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   line-height: 1.3 !important;
+   letter-spacing: 2px !important;
  }
- .myP2{
+
+ .myP2 {
    font-size: 12px !important;
-   font-weight: lighter !important;  
+   font-weight: lighter !important;
    text-align: left !important;
-    color: #1f1a17 !important;
+   color: #1f1a17 !important;
  }
- .myP3{
+
+ .myP3 {
    font-size: 18px !important;
-   font-weight: lighter !important;  
+   font-weight: lighter !important;
    text-align: left !important;
-    color: #1f1a17 !important;
+   color: #1f1a17 !important;
  }
 
 
-  .myTable{
-    border: #cfcfcf 0.1px solid !important;
- }
-  .myRow{
-    border-top: #cfcfcf 0.1px solid !important;
-    border-bottom: #cfcfcf 0.1px solid !important;
+ .myTable {
+   border: #cfcfcf 0.1px solid !important;
  }
 
-
- .elementor-20120 .elementor-element.elementor-element-f1c046e:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-20120 .elementor-element.elementor-element-f1c046e > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-color: #ebe5d7 !important;
-}
-
-.elementor-20120 .elementor-element.elementor-element-b92d2c > .elementor-container {
-    background-color: #ebe5d7 !important;
-}
-
-.elementor-20120 .elementor-element.elementor-element-b92d2c:not(.elementor-motion-effects-element-type-background), .elementor-20120 .elementor-element.elementor-element-b92d2c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-color: #ebe5d7 !important;
-    background-image: linear-gradient(90deg, #ebe5d7 50%, #ebe5d7 50%) !important;
-}
+ .myRow {
+   border-top: #cfcfcf 0.1px solid !important;
+   border-bottom: #cfcfcf 0.1px solid !important;
+ }
 
 
-.elementor-20120 .elementor-element.elementor-element-b92d2c:not(.elementor-motion-effects-element-type-background), .elementor-20120 .elementor-element.elementor-element-b92d2c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-color: #ebe5d7 !important;
-    background-image: linear-gradient(90deg, #ebe5d7 50%, #ebe5d7 50%) !important;
-}
+ .elementor-20120 .elementor-element.elementor-element-f1c046e:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
+ .elementor-20120 .elementor-element.elementor-element-f1c046e>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+   background-color: #f8f7f3 !important;
+ }
+
+ .elementor-20120 .elementor-element.elementor-element-b92d2c>.elementor-container {
+   background-color: #f8f7f3 !important;
+ }
+
+ .elementor-20120 .elementor-element.elementor-element-b92d2c:not(.elementor-motion-effects-element-type-background),
+ .elementor-20120 .elementor-element.elementor-element-b92d2c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+   background-color: #f8f7f3 !important;
+   background-image: linear-gradient(90deg, #f8f7f3 50%, #f8f7f3 50%) !important;
+ }
+
+
+ .elementor-20120 .elementor-element.elementor-element-b92d2c:not(.elementor-motion-effects-element-type-background),
+ .elementor-20120 .elementor-element.elementor-element-b92d2c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+   background-color: #f8f7f3 !important;
+   background-image: linear-gradient(90deg, #f8f7f3 50%, #f8f7f3 50%) !important;
+ }
 
 
 
-#mynewNavNav{
-    display: none !important;
-}
+ #mynewNavNav {
+   display: none !important;
+ }
 
-#mobile-menu-btn , #mySearchColor{
-  background: transparent !important;
-}
+ #mobile-menu-btn,
+ #mySearchColor {
+   background: transparent !important;
+ }
 
-#myColorblack{
-    color: #000 !important;
-}
+ #myColorblack {
+   color: #000 !important;
+ }
 
-@media (min-width: 640px) {
-    .sm\:flex {
-        display: flex !important
-;
-    }
+ @media (min-width: 640px) {
+   .sm\:flex {
+     display: flex !important;
+   }
 
-    #mynewNavNav{
-    display: flex !important;
-}
-}
+   #mynewNavNav {
+     display: flex !important;
+   }
+ }
 
 
+ .myBanTit {
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
+   color: #fff !important;
+   font-size: clamp(1rem, 12vw, 15rem) !important;
+   margin: 0 !important;
+   line-height: 0.9 !important;
+
+ }
+
+ .myBanTit1 {
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
+   color: #fff !important;
+   font-size: clamp(1rem, 5vw, 4rem) !important;
+   margin: 0 !important;
+   line-height: 0.9 !important;
+ }
+
+
+ .myNavLi {
+   font-family: "BDO Grotesk VF", Arial, sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
+   color: #000 !important;
+   font-size: 0.8rem !important;
+   letter-spacing: 0.25rem !important;
+ }
+
+ .titlemymymy2 {
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 400 !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
+   color: #000 !important;
+   font-size: clamp(5rem, 5vw, 20rem) !important;
+   margin: 0 !important;
+   line-height: 1 !important;
+ }
+
+
+ .goldenText {
+   color: #CBAB58 !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 400 !important;
+   font-style: normal !important;
+   text-transform: uppercase !important;
+   font-size: 1rem !important;
+   margin: 0 !important;
+   line-height: 1 !important;
+   letter-spacing: 0.2rem !important;
+ }
+
+ .titlemymymy2abcd {
+   font-family: 'Inter', sans-serif !important;
+   font-weight: bold !important;
+   font-style: normal !important;
+   color: #000 !important;
+   font-size: clamp(4rem, 5vw, 13rem) !important;
+   line-height: 1 !important;
+ }
+
+
+ .grText {
+   color: #666 !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   font-size: 1.2rem !important;
+   line-height: 1 !important;
+ }
+
+ .what1 {
+   color: #e0dcd6 !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 500 !important;
+   font-style: normal !important;
+   font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+   line-height: 1 !important;
+   padding: 4rem;
+ }
+
+ .myHrT {
+   border: white solid 1px !important;
+ }
+
+ .numberT {
+   background: #CBAB58 !important;
+   color: white !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 100 !important;
+   font-size: 1rem !important;
+ }
+
+
+ .myBorder123123 {
+   padding-top: 2rem !important;
+   padding-bottom: 2rem !important;
+   border-top: #666 dotted 0.3px !important;
+ }
+
+
+ footer {
+   background: #e1dcd6 !important;
+ }
+
+ .myRights {
+   color: #6b6b6b;
+   font-size: .75rem;
+   font-weight: 400;
+ }
+
+
+ .colorp {
+   color: #666 !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   font-size: 1rem !important;
+ }
+
+ .myfp {
+   color: #000 !important;
+   font-family: 'Inter', sans-serif !important;
+   font-weight: 300 !important;
+   font-style: normal !important;
+   font-size: 1rem !important;
+ }
+
+
+
+
+ .myOver {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 84px;
+   height: 100%;
+   background-color: #f8f7f3;
+   pointer-events: none;
+   z-index: 20;
+ }
+
+ .myOver1 {
+   position: 'absolute';
+   top: 0;
+   right: 0;
+   width: '120px';
+   height: '100%';
+   pointer-events: 'none';
+   background: 'linear-gradient(to left, #f8f7f3 70%, rgba(255,255,255,0) 100%)';
+   filter: 'blur(15px)';
+   z-index: 10;
+ }
+
+
+ .myWhatBack{
+  width: clamp(2rem, 100vw, 100rem) !important;
+  height: clamp(150rem, 100vw, 105rem) !important;
+  border-radius: 100px !important; 
+ }
+
+ @media (max-width: 640px) {
+
+   /* For mobile screens */
+   .myOver {
+     width: 10px;
+   }
+   .myOver1 {
+     display: none;
+   }
+
+
+ .myWhatBack{
+  width: 300px !important; 
+  border-radius: 30px !important; 
+ }
+
+
+
+
+ }

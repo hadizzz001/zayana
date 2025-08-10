@@ -10,6 +10,7 @@ import { CartProvider } from './context/CartContext';
 import { BooleanProvider } from './context/CartBoolContext'; 
 import GifLoader from '../components/GifLoader'
 import Offer from '../components/Offer'
+import SmoothScroll from '../components/SmoothScroll' 
 import WhatsAppIcon from '../components/WhatsAppIcon';  
 import { GoogleAnalytics } from '@next/third-parties/google'
 
@@ -40,15 +41,15 @@ export default function RootLayout({
   />
   <meta content="max-image-preview:large" name="robots" />
   <title>
-    SCENTO D’ITALIA
+    Zayana
   </title>
   <meta
-    content="At SCENTO D’ITALIA, we're reshaping the way businesses connect."
+    content="At Zayana, we're reshaping the way businesses connect."
     name="description" 
   />
-  <meta content="SCENTO D’ITALIA" name="keywords" property="SCENTO D’ITALIAbynature, SCENTO D’ITALIA, men, women" />
+  <meta content="Zayana" name="keywords" property="Zayana,  men, women" />
   <meta
-    content="SCENTO D’ITALIA"
+    content="Zayana"
     name=""
     property="og:title"
   />
@@ -59,28 +60,28 @@ export default function RootLayout({
   />
   <meta content="website" name="" property="og:type" />
   <meta
-    content="At SCENTO D’ITALIA, we're reshaping the way businesses connect."
+    content="At Zayana, we're reshaping the way businesses connect."
     name=""
     property="og:description"
   />
   <meta
-    content="https://res.cloudinary.com/dciku5di2/image/upload/v1753718560/94b6bc93-0c59-4c46-adc0-520d3918adae_zsrbvx.jpg"
+    content="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
     name=""
     property="og:image"
   />
    
   <link
-    href="https://res.cloudinary.com/dciku5di2/image/upload/v1753718560/94b6bc93-0c59-4c46-adc0-520d3918adae_zsrbvx.jpg"
+    href="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
     rel="apple-touch-icon"
     sizes="180x180"
   />
   <link
-    href="https://res.cloudinary.com/dciku5di2/image/upload/v1753718560/94b6bc93-0c59-4c46-adc0-520d3918adae_zsrbvx.jpg"
+    href="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
     rel="icon"
     sizes="32x32" 
   />
   <link
-    href="https://res.cloudinary.com/dciku5di2/image/upload/v1753718560/94b6bc93-0c59-4c46-adc0-520d3918adae_zsrbvx.jpg"
+    href="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
     rel="icon"
     sizes="16x16" 
   /> 
@@ -117,10 +118,10 @@ export default function RootLayout({
     rel="stylesheet"
     href="css/style-4109db2b.css"
   />
-
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"/>
+ 
+<link href="https://fonts.cdnfonts.com/css/bdo-grotesk" rel="stylesheet"/>
+                <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet"/>
+                
                 
 
  
@@ -128,8 +129,7 @@ export default function RootLayout({
 </>
 
       <body>
- 
-      <Offer /> 
+  
       <GifLoader />
 
         

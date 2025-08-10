@@ -30,7 +30,7 @@ export default function Home() {
 
 
 
-                                    At SCENTO D’ITALIA, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website and use our services. We understand the importance of your personal data and are dedicated to ensuring its confidentiality and security.
+                                    At Zayana, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website and use our services. We understand the importance of your personal data and are dedicated to ensuring its confidentiality and security.
 
                                     Information Collection and Use
 
@@ -38,7 +38,7 @@ export default function Home() {
 
                                     Data Protection
 
-                                    SCENTO D’ITALIA employs robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We use encryption technologies and follow best practices to ensure your data is safe.
+                                    Zayana employs robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We use encryption technologies and follow best practices to ensure your data is safe.
 
                                     Use of Information
 
@@ -54,7 +54,7 @@ export default function Home() {
 
                                     Changes to This Policy
 
-                                    SCENTO D’ITALIA reserves the right to update this Privacy Policy at any time. We will notify you of any significant changes by posting the new policy on our website. Your continued use of our services after such changes constitutes your acceptance of the new Privacy Policy.
+                                    Zayana reserves the right to update this Privacy Policy at any time. We will notify you of any significant changes by posting the new policy on our website. Your continued use of our services after such changes constitutes your acceptance of the new Privacy Policy.
 
                                     Contact Us
 

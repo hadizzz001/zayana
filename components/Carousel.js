@@ -1,61 +1,55 @@
 "use client";
 
 import React from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const MyCarousel = () => {
+  const { scrollY } = useScroll();
+
+  // Larger scroll range = slower movement
+  const firstWordRaw = useTransform(scrollY, [0, 1200], [0, -600]);
+  const secondWordRaw = useTransform(scrollY, [0, 1200], [0, 600]);
+
+  // Smooth spring easing
+  const springConfig = { stiffness: 30, damping: 20, mass: 1.5 };
+  const firstWordX = useSpring(firstWordRaw, springConfig);
+  const secondWordX = useSpring(secondWordRaw, springConfig);
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
-      <video
+      {/* Background Image */}
+      <img
+        src="https://res.cloudinary.com/dntdrlrse/image/upload/v1754823703/6893c3992efc37104b6349cb_chs-header-01_syztoh.jpg"
+        alt="Background"
         className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="vid.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      />
 
       {/* Radial Mask Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none 
-        bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_30%,rgba(0,0,0,0.7)_100%)]">
-      </div>
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_30%,rgba(0,0,0,0.7)_100%)]"></div>
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-start justify-center h-full p-4 text-left text-white container">
-        <h3 className="text-2xl font-bold uppercase animate-slideInLeft mytitle1">
-          Hot Sale
+      <div className="relative z-10 flex flex-col justify-center h-full text-left text-white px-4">
+        {/* Subtitle */}
+        <h3 className="myBanTit1  ">
+          THE ARCHITECTS OF
         </h3>
-        <p className="text-[14px] mt-2 animate-slideInLeft delay-200">
-          Offer with up to 50% off on our categories!
-        </p>
-        <a href="/shop" className="myGray mybtn1">
-          Shop Now!
-        </a>
+
+        {/* Big Title - stacked words */}
+        <div className="flex flex-col items-start leading-none">
+          <motion.p
+            style={{ x: firstWordX }}
+            className="myBanTit"
+          >
+            zayana
+          </motion.p>
+          <motion.p
+            style={{ x: secondWordX }}
+            className="myBanTit"
+          >
+            HOSPITALITY
+          </motion.p>
+        </div>
       </div>
-
-      {/* Animations */}
-      <style jsx>{`
-        @keyframes slideInLeft {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          100% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-
-        .animate-slideInLeft {
-          animation: slideInLeft 1s ease-out forwards;
-        }
-
-        .delay-200 {
-          animation-delay: 0.2s;
-        }
-      `}</style>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const SLoader = ({ onComplete }) => {
         transition={{ duration: 2, ease: "easeInOut" }}
       >
         <img
-          src="https://res.cloudinary.com/dciku5di2/image/upload/v1753716404/logo_hwwyis.webp"
+          src="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
           alt="S Loader"
           width={100}
           height={100}

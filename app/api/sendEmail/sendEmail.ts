@@ -24,8 +24,8 @@ export const sendEmail = async (formData: FormData) => {
         resend.emails.send({
             from: "info@anazon.hadizproductions.com",
             to: email+"",
-            subject: "Offer code from SCENTO D’ITALIA",
-            text: "Thanks you for subscribing with SCENTO D’ITALIA your code is: Abcd12345",
+            subject: "Offer code from Zayana",
+            text: "Thanks you for subscribing with Zayana your code is: Abcd12345",
         })
     }
     

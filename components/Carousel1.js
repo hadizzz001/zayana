@@ -26,7 +26,7 @@ const MyCarousel = () => {
             Brand Essence
         </h1>
         <p className="text-[11px] mt-4 animate-slideInLeft delay-200 text-white  ">
-          Scento d’Italia is a Middle Eastern-born perfume brand
+          Zayana is a Middle Eastern-born perfume brand
 inspired by the timeless elegance of Italian and French perfumery. It blends the emotional richness of oriental
 scents with the refined artistry of Europe’s fragrance
 capitals. The brand is humble yet chic, designed to be a

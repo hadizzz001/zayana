@@ -1,16 +1,10 @@
 // "use client";  
-import { useState, useEffect } from "react";
-import ProductArrival from './ProductArrival';
-import Catslider from './Catslider';
-import ProductTop from './ProductTop';
-import Vid from './Vid';
-import ReviewsSwiper from './ReviewsSwiper';
-import Rate from './Rate';
-import Offer from './Offer';
-import Box from './Box';
-import Carousel from './Carousel';
-import Carousel1 from './Carousel1';
+import { useState, useEffect } from "react"; 
+import Carousel from './Carousel'; 
 import About from './About';
+import Count from './Count';
+import Brand from './Brand';
+import What from './What';
 
 
 
@@ -122,20 +116,15 @@ const Body = () => {
 
         <div id="usp-scroll-to"></div>
 
-        {/* <Box /> */}
+ 
 
         <Carousel />
+        <Count />
+        <Brand />
         <About />
+        <What />
 
-         <ProductTop />
  
-        <Catslider />
-        <Carousel1 />
-
-       
-        <ReviewsSwiper />
-        <Rate />
-
 
 
         <style

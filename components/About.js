@@ -3,97 +3,86 @@
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const cardVariants = {
+    hidden: { rotateX: -90, opacity: 0 },
+    visible: (i) => ({
+      rotateX: 0,
+      opacity: 1,
+      transition: { duration: 0.8, delay: i * 0.2, ease: "easeOut" },
+    }),
+  };
+
+  const images = [
+    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a84_6890e8f1e78cb348eb554ddf_chs-saudi-vision-2030-image-01.jpg",
+    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a83_6890e8f1e78cb348eb554dfd_chs-saudi-vision-2030-image-02.jpg",
+    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a68_6890e8f1e78cb348eb554e1c_chs-saudi-vision-2030-image-03.jpg",
+  ];
+
   return (
-    <>
-      <section
-        data-image-width={1980}
-        data-image-height={1214}
+    <section
+      className="container "
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        minHeight: "100vh",
+        padding: "40px 20px",
+        textAlign: "center",
+      }}
+    >
+      <p className="goldenText">About Us</p>
+      <p className="titlemymymy2abcd mb-20">Welcome to Zayana</p>
+      <p className="grText ">
+        Zayana Hospitality is one of the industry's leading Third-party Hotel Management companies, operating hotels on behalf of owners to ensure that they maximize their returns from their assets.
+      </p>
+      <p className="grText mb-10">
+        At Zayana Hospitality, we are dedicated to redefining service excellence in Lebanon, Nigeria and the Kingdom of Saudi Arabia.
+
+        We can deliver on this promise because we are innovators, delivering exceptional and memorable experiences to our guests, while providing unparalleled returns on investment to our valued hotel owners.
+
+      </p>
+      <div
         style={{
           display: "flex",
-          width: "100%",
-          minHeight: "100vh",
+          flexDirection: "column",
+          gap: "30px",
           alignItems: "center",
-          justifyContent: "center",
-          boxSizing: "border-box",
-          padding: "40px 20px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            maxWidth: "1200px",
-            alignItems: "center",
-            justifyContent: "space-between",
-            flexWrap: "wrap", // important for wrapping
-          }}
-        >
-          {/* Left Side - Text */}
+        {images.map((src, i) => (
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            key={i}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true, amount: 0.4 }}
+            variants={cardVariants}
             style={{
-              width: "50%",
-              paddingRight: "20px",
-            }}
-            className="content-text"
-          >
-            <h5 className="myGray mytitle2" style={{ marginBottom: "20px" }}>
-              About Company
-            </h5>
-            <p className="myGray" style={{ fontSize: "16px", lineHeight: "1.6", textAlign: "justify"  }}>
-              Scento d’Italia is a culturally rooted fragrance brand positioned
-              for high-volume success in the MENA region and beyond. With a launch
-              collection of Eau de Parfum priced under $7.00, the brand balances
-              artisanal quality with commercial scalability. Inspired by Italian
-              and French perfume traditions, Scento d’Italia blends trend-driven
-              impressions, niche compositions, and exclusive SKUs to appeal to a
-              broad demographic aged 15 to 75+. As a modern brand with humble
-              character and global aspirations, it stands ready to scent the
-              world—one bottle at a time.
-            </p>
-          </motion.div>
-
-          {/* Right Side - Image */}
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true, amount: 0.4 }}
-            style={{
-              width: "50%",
+              perspective: "1000px",
+              background: "#fff",
+              borderRadius: "60px", 
+              overflow: "hidden",
+              width: "600px",
+              height: "300px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              marginTop:"10em"
             }}
-            className="content-image"
           >
             <img
-              src="https://res.cloudinary.com/dciku5di2/image/upload/v1753876862/il_570xN.424794574_k1u5_hmxyzv.webp"
-              alt="Company"
-              style={{ maxWidth: "100%", height: "auto", borderRadius: "8px" }}
+              src={src}
+              alt={`Image ${i + 1}`}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                
+              }}
             />
           </motion.div>
-        </div>
-      </section>
-
-      <style>{`
-        @media (max-width: 768px) {
-          .content-text, .content-image {
-            width: 100% !important;
-            padding-right: 0 !important;
-          }
-          .content-text {
-            order: 2; /* text goes under image */
-            margin-top: 20px;
-          }
-          .content-image {
-            order: 1; /* image stays first */
-          }
-        }
-      `}</style>
-    </>
+        ))}
+      </div>
+    </section>
   );
 }
