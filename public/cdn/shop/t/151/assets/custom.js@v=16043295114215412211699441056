@@ -1,0 +1,82 @@
+/** Shopify CDN: Minification failed
+
+Line 28:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 29:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 46:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 47:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 48:2 Transforming let to the configured target environment ("es5") is not supported yet
+Line 57:4 Transforming const to the configured target environment ("es5") is not supported yet
+Line 65:6 Transforming const to the configured target environment ("es5") is not supported yet
+Line 67:8 Transforming const to the configured target environment ("es5") is not supported yet
+
+**/
+/*
+* Broadcast Theme
+*
+* Use this file to add custom Javascript to Broadcast.  Keeping your custom
+* Javascript in this fill will make it easier to update Broadcast. In order
+* to use this file you will need to open layout/theme.liquid and uncomment
+* the custom.js script import line near the bottom of the file.
+*/
+
+
+(function() {
+  // Add custom code below this line
+
+  /* Custom Header Menu */
+
+  const headerTrigger = document.querySelector('[data-menu-dropdown-trigger]');
+  const mainHeaderElement = document.querySelector(".header__mobile");
+
+  // menu navigation item trigger
+  headerTrigger.addEventListener("click", (event) => {
+    mainHeaderElement.classList.contains("active")
+      ? mainHeaderElement.classList.remove("active") 
+      : mainHeaderElement.classList.add("active")
+  });
+
+  // close the menu if clicked outside
+  document.addEventListener("click", (event) => {
+    if(mainHeaderElement.classList.contains("active") && event.target.closest(".header__mobile") === null){
+      mainHeaderElement.classList.remove("active");
+    }
+  });
+
+  // set the opacity for each navigation item to create a gradient effect
+  const numberOfItems = mainHeaderElement.querySelectorAll(".nav__item").length;
+  const step = parseFloat((1 / numberOfItems).toFixed(2));
+  let opacity = 1;
+
+  mainHeaderElement.querySelectorAll(".nav__item").forEach((item) => {
+    item.style.setProperty('--nav-item-opacity', opacity);
+    opacity = opacity - step;
+  });
+
+  // trigger child items
+  mainHeaderElement.querySelectorAll(".nav__item").forEach((item) => {
+    const itemArrow = item.querySelector(".expand_child") || false;
+    if(itemArrow){
+      itemArrow.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.target.querySelector("svg").classList.toggle("active");
+        item.querySelector(".child-nav__item-list").classList.toggle("active");
+      });
+
+      const grandchildItems = item.querySelectorAll(".child-nav__item");
+      grandchildItems.forEach((grandchild) => {
+        const grandchildArrow = grandchild.querySelector(".expand_child") || false;
+
+        if(grandchildArrow) {
+          grandchildArrow.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.target.querySelector("svg").classList.toggle("active");
+            item.querySelector(".grandchild-nav__item-list").classList.toggle("active");
+          });
+        }
+      });
+    }
+  });
+
+  // ^^ Keep your scripts inside this IIFE function call to 
+  // avoid leaking your variables into the global scope.
+})();

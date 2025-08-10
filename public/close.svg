@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<filter  height="100%" width="100%" id="alpha" y="0%" x="0%" filterUnits="objectBoundingBox">
+	<feColorMatrix  type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" in="SourceGraphic"></feColorMatrix>
+</filter>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64" id="mask0">
+	<g filter="url(#alpha)">
+		<g>
+			<rect opacity="0.3" width="64" height="64"/>
+		</g>
+	</g>
+	<g filter="url(#alpha)">
+		<g>
+			<rect opacity="0.15" width="64" height="64"/>
+		</g>
+	</g>
+	<g filter="url(#alpha)">
+		<g>
+			<rect opacity="0.3" width="64" height="64"/>
+		</g>
+	</g>
+</mask>
+<g id="surface197118949" mask="url(#mask0)">
+	<path fill="#136481" d="M42.965,30l8.133-8.137c1.563-1.559,1.563-4.094,0-5.656l-5.305-5.305c-1.563-1.563-4.094-1.563-5.656,0
+		L32,19.039l-8.137-8.137c-1.563-1.563-4.094-1.563-5.656,0l-5.305,5.305c-1.563,1.563-1.563,4.098,0,5.656L21.035,30l-8.133,8.137
+		c-1.563,1.559-1.563,4.094,0,5.656l5.305,5.305c1.563,1.563,4.094,1.563,5.656,0L32,40.965l8.137,8.133
+		c1.563,1.563,4.094,1.563,5.656,0l5.305-5.305c1.563-1.563,1.563-4.098,0-5.656L42.965,30z"/>
+	<g>
+		<path fill="none" enable-background="new    " d="z"/>
+	</g>
+	<g>
+		<image overflow="visible" width="64" height="64" xlink:href="4EDD61BF.png" >
+		</image>
+		<path fill="none" enable-background="new    " d="z"/>
+	</g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M18.5,15.5L21,13l2.5,2.5"/>
+</g>
+</svg>
