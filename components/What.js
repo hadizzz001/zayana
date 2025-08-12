@@ -20,13 +20,13 @@ export default function WhatWeDo() {
             number: 3,
             title: "Asset Management",
             text: "Zayana Hospitality's Asset Management team delivers tailored solutions throughout the hospitality life-cycle, aligning stakeholders with the owner's goals to drive successful partnerships, optimize asset value, and maximize returns through strategic initiatives. ",
-            img: "https://res.cloudinary.com/dntdrlrse/image/upload/v1755004305/6893c3992efc37104b6349d0_688b8326338dd8577f6ead52_web-home-image-test-creative_trg8wo.jpg",
+            img: "https://res.cloudinary.com/dntdrlrse/image/upload/v1755004302/6893c3992efc37104b6349d2_688b834731e38d68b82a19f9_web-home-image-test-software_v1w1xg.jpg",
         },
         {
             number: 4,
             title: "Food and Beverage",
             text: "We bring a restaurateur’s approach to our food and beverage (F&B) outlets, ensuring every detail is meticulously crafted to deliver exceptional cuisine and exemplary service. From our Risen Artisan Bakeries to specialty restaurants, we design experiences that resonate with both guests and communities.",
-            img: "https://res.cloudinary.com/dntdrlrse/image/upload/v1755004302/6893c3992efc37104b6349d2_688b834731e38d68b82a19f9_web-home-image-test-software_v1w1xg.jpg",
+            img: "https://res.cloudinary.com/dntdrlrse/image/upload/v1755004961/food-service-header-2023.jpg_m4ltn2.webp",
         },
     ];
 
