@@ -35,7 +35,7 @@ export default function Home() {
       <p className="grText ">
         Zayana Hospitality is one of the industry's leading Third-party Hotel Management companies, operating hotels on behalf of owners to ensure that they maximize their returns from their assets.
       </p>
-      <p className="grText mb-10">
+      <p className="grText mb-10  ">
         At Zayana Hospitality, we are dedicated to redefining service excellence in Lebanon, Nigeria and the Kingdom of Saudi Arabia.
 
         We can deliver on this promise because we are innovators, delivering exceptional and memorable experiences to our guests, while providing unparalleled returns on investment to our valued hotel owners.

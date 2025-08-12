@@ -1692,7 +1692,7 @@
    font-weight: 300 !important;
    font-style: normal !important;
    font-size: 1.2rem !important;
-   line-height: 1 !important;
+   line-height: 1.1 !important;
  }
 
  .what1 {
@@ -1780,12 +1780,19 @@
 
 
  .myWhatBack{
-  width: clamp(2rem, 100vw, 100rem) !important;
-  height: clamp(150rem, 100vw, 105rem) !important;
+  width: clamp(2rem, 100vw, 100rem) !important; 
   border-radius: 100px !important; 
  }
 
+  .mobcenter{
+  text-align: left !important;
+ }
+
  @media (max-width: 640px) {
+
+   .mobcenter{
+  text-align: center !important;
+ }
 
    /* For mobile screens */
    .myOver {
@@ -1805,3 +1812,21 @@
 
 
  }
+
+ .aboutTit{
+     font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: clamp(3rem, 5vw, 5rem) !important;
+  color: #fff !important;
+  font-style: italic !important;
+ }
+
+
+ .aboutTit1{
+     font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: clamp(1rem, 2vw, 2rem) !important;
+  color: #000 !important;
+  font-style: italic !important;
+ }
+

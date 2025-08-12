@@ -119,12 +119,12 @@ const Body = () => {
  
 
         <Carousel />
-        <Count />
-        <Brand />
+
         <About />
         <What />
 
- 
+         <Count />
+        <Brand />
 
 
         <style

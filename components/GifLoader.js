@@ -29,9 +29,9 @@ const SLoader = ({ onComplete }) => {
         <img
           src="https://res.cloudinary.com/dntdrlrse/image/upload/v1754820849/logo_dsi854.webp"
           alt="S Loader"
-          width={100}
-          height={100}
-          className="w-24 h-24 object-contain"
+          width={200}
+          height={200}
+          className="w-64 h-64 object-contain"
         />
       </motion.div>
     </div>

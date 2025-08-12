@@ -5,7 +5,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 const WhatsAppIcon = () => {
   return (
     <a
-      href="https://wa.me/+96176334886" 
+      href="https://wa.me/+9613431489" 
       target="_blank"
       rel="noopener noreferrer"
       style={{

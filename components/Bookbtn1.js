@@ -1,16 +1,19 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
-export default function SimpleHoverButton( ) {
+export default function SimpleHoverButton() {
   const [hovered, setHovered] = useState(false);
+  const router = useRouter();
 
   return (
     <button
+      onClick={() => router.push('/services')}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        backgroundColor:  '#e0dcd6',
+        backgroundColor: hovered ? '#d1ccc6' : '#e0dcd6', // small hover effect
         color: 'black',
         border: 'none',
         cursor: 'pointer',

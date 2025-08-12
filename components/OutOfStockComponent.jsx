@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OutOfStockComponent = ({ itemName }) => {
-  const whatsappNumber = '96176334886'; // Replace with your WhatsApp number (no +)
+  const whatsappNumber = '9613431489'; // Replace with your WhatsApp number (no +)
 
   const message = `I want to preorder this item ${itemName}`;
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
