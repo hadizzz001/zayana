@@ -123,7 +123,7 @@ const Body = () => {
         <About />
         <What />
 
-         <Count />
+         {/* <Count /> */}
         <Brand />
 
 

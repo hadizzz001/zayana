@@ -14,7 +14,7 @@ const NewsTicker = () => {
 
   return (
     <div
-      className="relative w-full py-2 mt-[9em] mb-[9em] overflow-hidden "
+      className="relative w-full py-2 mt-[2em] mb-[2em] overflow-hidden "
       style={{ position: 'relative' }}
     >
  

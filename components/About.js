@@ -31,7 +31,7 @@ export default function Home() {
       }}
     >
       <p className="goldenText">About Us</p>
-      <p className="titlemymymy2abcd mb-20">Welcome to Zayana</p>
+      <p className="titlemymymy2abcd mb-10">Welcome to Zayana</p>
       <p className="grText ">
         Zayana Hospitality is one of the industry's leading Third-party Hotel Management companies, operating hotels on behalf of owners to ensure that they maximize their returns from their assets.
       </p>
@@ -44,8 +44,7 @@ export default function Home() {
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          gap: "30px",
+          flexDirection: "column", 
           alignItems: "center",
         }}
       >
@@ -67,7 +66,7 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginTop:"10em"
+              marginTop:"2em"
             }}
           >
             <img
