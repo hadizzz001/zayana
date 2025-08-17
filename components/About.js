@@ -13,9 +13,14 @@ export default function Home() {
   };
 
   const images = [
-    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a84_6890e8f1e78cb348eb554ddf_chs-saudi-vision-2030-image-01.jpg",
-    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a83_6890e8f1e78cb348eb554dfd_chs-saudi-vision-2030-image-02.jpg",
-    "https://cdn.prod.website-files.com/6893c3992efc37104b6347e4/6893c3992efc37104b634a68_6890e8f1e78cb348eb554e1c_chs-saudi-vision-2030-image-03.jpg",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001z_vnz4xn.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001_gshyob.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001a_t875db.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001b_kx20v9.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001f_y9ch2u.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001c_i2jtf2.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/001d_zoq9yg.webp",
+    "https://res.cloudinary.com/dntdrlrse/image/upload/v1755434901/002_dktpbe.webp",
   ];
 
   return (
@@ -31,7 +36,7 @@ export default function Home() {
       }}
     >
       <p className="goldenText">About Us</p>
-      <p className="titlemymymy2abcd mb-10">Welcome to Zayana</p>
+      <p className="titlemymymy2abcd mb-10">Welcome to Zayana Hospitality</p>
       <p className="grText ">
         Zayana Hospitality is one of the industry's leading Third-party Hotel Management companies, operating hotels on behalf of owners to ensure that they maximize their returns from their assets.
       </p>
@@ -61,8 +66,8 @@ export default function Home() {
               background: "#fff",
               borderRadius: "60px", 
               overflow: "hidden",
-              width: "600px",
-              height: "300px",
+              width: "100%",
+              height: "100%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -75,7 +80,7 @@ export default function Home() {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
+                objectFit: "contain",
                 
               }}
             />

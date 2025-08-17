@@ -30,12 +30,12 @@ const MyCarousel = () => {
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col justify-center h-full text-left text-white px-4">
         {/* Subtitle */}
-        <h3 className="myBanTit1  ">
+        {/* <h3 className="myBanTit1  ">
           THE ARCHITECTS OF
-        </h3>
+        </h3> */}
 
         {/* Big Title - stacked words */}
-        <div className="flex flex-col items-start leading-none">
+        {/* <div className="flex flex-col items-start leading-none">
           <motion.p
             style={{ x: firstWordX }}
             className="myBanTit"
@@ -48,7 +48,7 @@ const MyCarousel = () => {
           >
             HOSPITALITY
           </motion.p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
