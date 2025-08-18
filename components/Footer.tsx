@@ -42,16 +42,14 @@ const Footer = () => {
                         <div className="text-left">
                             <p className="myfp mb-3">Services</p>
                             <ul className="space-y-2">
-                                <li><a href="/services" className="colorp">Services1</a></li>
-                                <li><a href="/ext" className="colorp">Services2</a></li>
-                                <li><a href="/ext" className="colorp">Services3</a></li>
+                                <li><a href="/services" className="colorp">Our Services</a></li> 
                             </ul>
                         </div>
                     </div>
                 </div>
 
 
- <div className="flex justify-center gap-6 mt-4">
+ {/* <div className="flex justify-center gap-6 mt-4">
       <a
         href="https://www.instagram.com/rafidaham_hairdressing"
         target="_blank"
@@ -92,7 +90,7 @@ const Footer = () => {
       >
         <FaTiktok />
       </a>
-    </div>
+    </div> */}
 
                 {/* Bottom Row */}
                 <div className="text-center mt-20 mb-20">
@@ -143,8 +141,7 @@ const Footer = () => {
                         isOpen: showServices,
                         setOpen: setShowServices,
                         items: [
-                            { href: '/services', text: 'Services' },
-                            { href: '/ext', text: 'Extensions' },
+                            { href: '/services', text: 'Our Services' }, 
                         ],
                     },
                 ].map(({ label, isOpen, setOpen, items }, index) => (
@@ -179,7 +176,7 @@ const Footer = () => {
                     </div>
                 ))}
 
- <div className="flex justify-center gap-6 mt-4">
+ {/* <div className="flex justify-center gap-6 mt-4">
       <a
         href="https://www.instagram.com/rafidaham_hairdressing"
         target="_blank"
@@ -220,7 +217,7 @@ const Footer = () => {
       >
         <FaTiktok />
       </a>
-    </div>
+    </div> */}
 
               
 

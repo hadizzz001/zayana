@@ -1,24 +1,35 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 
-const staticImages = [
-  'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png',
-  'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg',
-  'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',
-  'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg',
-  'https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png',
-];
-
 const NewsTicker = () => {
-  const loopedImages = [...staticImages, ...staticImages];
+  const [brands, setBrands] = useState([]);
+
+  useEffect(() => {
+    const fetchBrands = async () => {
+      try {
+        const res = await fetch('/api/brand');
+        const data = await res.json();
+
+        // Only take the first image of each brand
+        const brandImages = data.map((item) => item.img[0]);
+        setBrands(brandImages);
+      } catch (error) {
+        console.error('Error fetching brand data:', error);
+      }
+    };
+
+    fetchBrands();
+  }, []);
+
+  // Loop the images for a continuous marquee effect
+  const loopedImages = [...brands, ...brands];
 
   return (
     <div
-      className="relative w-full py-2 mt-[2em] mb-[2em] overflow-hidden "
+      className="relative w-full py-2 mt-[2em] mb-[2em] overflow-hidden"
       style={{ position: 'relative' }}
     >
- 
-
       <Marquee speed={60} gradient={false} pauseOnHover={false} direction="left">
         {loopedImages.map((src, index) => (
           <div

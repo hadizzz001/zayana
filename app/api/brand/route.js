@@ -7,15 +7,15 @@ export async function GET() {
   try {
     const client = await clientPromise; // Connect to MongoDB
     const db = client.db('test'); // Replace with your database name
-    const collection = db.collection('Product'); // Replace with your collection name
+    const collection = db.collection('Brand'); // Replace with your collection name
 
-    // Exclude documents where category is "Pool Trays"
+    // Filter out 'Pool Trays' and sort by 'id' ascending
     const data = await collection
-      .find({ category: { $ne: 'Pool Trays' } })
-      .sort({ _id: -1 })
+      .find( ) // Adjust 'name' if the category field has a different key
+      .sort({ id: 1 })
       .toArray();
 
-    return NextResponse.json(data); // Return data as JSON
+    return NextResponse.json(data);
   } catch (error) {
     console.error('Error fetching data from MongoDB:', error);
     return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 });

@@ -11,23 +11,15 @@ export const sendEmail = async (formData: FormData) => {
     const phone = formData.get("phone");
     const message = formData.get("message");
 
-
-    if (firstname != null) {
+ 
         resend.emails.send({
-            from: "info@anazon.hadizproductions.com",
+            from: "noreply@ovoxa.beauty",
             to: "batoul@test0.hadizproductions.com",
             subject: "New message from your website customer",
             text: "Name: " + firstname + " " + lastname + "\nEmail:" + email + "\nPhone:" + phone + "\n" + message,
         })
         redirect('/thank');
-    } else {
-        resend.emails.send({
-            from: "info@anazon.hadizproductions.com",
-            to: email+"",
-            subject: "Offer code from Zayana",
-            text: "Thanks you for subscribing with Zayana your code is: Abcd12345",
-        })
-    }
+ 
     
 
 }
